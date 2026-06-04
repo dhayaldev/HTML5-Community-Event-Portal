@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Handling Demo</title>
+    <style>
+        body
+        {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button
+        {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover
+        {
+            background-color: darkblue;
+        }
+        #message
+        {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Handling Example</h1>
+    <button onclick="showMessage()">
+        Click Me
+    </button>
+    <p id="message"></p>
+    <script>
+        function showMessage()
+        {
+            document.getElementById("message").innerHTML =
+                "Welcome to the Community Event Portal!";
+        }
+    </script>
+</body>
+</html>

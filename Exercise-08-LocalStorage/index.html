@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Preferences</title>
+    <style>
+        body
+        {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        select
+        {
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+        }
+        button
+        {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #message
+        {
+            margin-top: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Community Event Preferences</h1>
+    <label>Select Your Favorite Event</label>
+    <br><br>
+    <select id="eventType">
+        <option value="">-- Select Event --</option>
+        <option value="Cultural Festival">Cultural Festival</option>
+        <option value="Sports Meet">Sports Meet</option>
+        <option value="Music Concert">Music Concert</option>
+        <option value="Skill Workshop">Skill Workshop</option>
+        <option value="Community Service">Community Service</option>
+    </select>
+    <br>
+    <button onclick="savePreference()">
+        Save Preference
+    </button>
+    <p id="message"></p>
+    <script>
+        window.onload = function()
+        {
+            let savedEvent = localStorage.getItem("favoriteEvent");
+            if(savedEvent)
+            {
+                document.getElementById("eventType").value = savedEvent;
+                document.getElementById("message").innerHTML = "Saved Preference: " + savedEvent;
+            }
+            sessionStorage.setItem( "lastVisited", "Exercise-08 LocalStorage Page");
+        };
+        function savePreference()
+        {
+            let eventType = document.getElementById("eventType").value;
+            localStorage.setItem( "favoriteEvent", eventType);
+            document.getElementById("message").innerHTML = "Preference Saved Successfully!";
+        }
+    </script>
+</body>
+</html>

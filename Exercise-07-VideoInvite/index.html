@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Community Event Video Invite</title>
+    <style>
+        body
+        {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 30px;
+        }
+        video
+        {
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        #status
+        {
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Community Event Video Invitation</h1>
+    <video width="600" controls oncanplay="videoReady()">
+        <source src="video/promo.mp4" type="video/mp4">
+        Your browser does not support video playback.
+    </video>
+    <p id="status"></p>
+    <script>
+        function videoReady()
+        {
+            document.getElementById("status").innerHTML = "Video ready to play";
+        }
+        window.onbeforeunload = function()
+        {
+            return "Are you sure you want to leave this page?";
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Debugging Demo</title>
+    <style>
+        body
+        {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 80px;
+        }
+        h1
+        {
+            color: darkblue;
+        }
+        p
+        {
+            font-size: 18px;
+        }
+        button
+        {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover
+        {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 Debugging Exercise</h1>
+    <p id="message">
+        Click the button to display a message.
+    </p>
+    <button onclick="showMessage()">
+        Click Me
+    </button>
+    <script>
+        function showMessage()
+        {
+            document.getElementById("message").innerHTML = "HTML Debugging Successful!";
+        }
+    </script>
+</body>
+</html>
