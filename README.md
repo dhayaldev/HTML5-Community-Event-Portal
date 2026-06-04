@@ -1,8 +1,8 @@
 # HTML5 Community Event Portal
 
-A collection of 10 HTML5 exercises demonstrating core web development concepts.
+This repository contains a collection of 10 HTML5 exercises developed as part of the training and learning activities under Cognizant Technology Solutions. The exercises demonstrate fundamental HTML5 concepts, multimedia integration, forms, client-side storage, geolocation services, and event handling.
 
-## Exercises
+## Exercises Included
 
 1. Base Template
 2. Navigation
@@ -15,12 +15,26 @@ A collection of 10 HTML5 exercises demonstrating core web development concepts.
 9. Geolocation
 10. Debugging
 
-## Technologies Used
+## Concepts Covered
 
-- HTML5
-- CSS3
-- JavaScript
+* HTML5 Document Structure
+* Hyperlinks and Navigation
+* Images and Multimedia
+* Forms and User Input
+* Event Handling
+* Video Embedding
+* Web Storage (Local Storage)
+* Geolocation API
+* Browser Debugging
+
+## Project Structure
+
+Each exercise is organized in a separate folder with its own `index.html` file and supporting resources.
 
 ## Author
 
 Aswin Dhayal
+
+## Organization
+
+Cognizant Technology Solutions
